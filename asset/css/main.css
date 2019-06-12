@@ -212,7 +212,7 @@ body{
 #call::after{
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f2a0";
+    content: "\f098";
     padding-left: 10px;
     font-size: 24px;
     cursor: default;
