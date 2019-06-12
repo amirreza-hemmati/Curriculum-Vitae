@@ -33,4 +33,5 @@ $(document).ready(function () {
         document.getElementById("myBar").style.width = scrolled + "%";
     }
     /* پایان اضافه شدن عرض با اسکرول  */
+    /*  document.execCommand("copy"); */
 });

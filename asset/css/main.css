@@ -58,6 +58,19 @@ body{
     #d2{
         display: none;
     }
+
+    #d-body{
+        display: flex;
+    }
+
+    #d-body1{
+        width: 70%;
+    }
+
+    #d-body2{
+        width: 30%;
+        padding-top: 2px;
+    }
 }
 
 @media only screen and (max-width: 680px)
@@ -115,6 +128,14 @@ body{
     #write-mee{
         display: none;
     }
+
+    #d-body1{
+        width: 100%;
+    }
+
+    #d-body2{
+        width: 100%;
+    }
 }
 #dhead{
     background-color: #636262;
@@ -153,4 +174,35 @@ body{
     content: "وضعیت سربازی: ";
     color: #ffc107;
     padding-left: 6px;
+}
+
+#d-body{
+    width: 100%;
+    height: 100vh;
+}
+
+#we-call{
+    background-color: #636262;
+    position: relative;
+    right: 25%;
+    font-size: 25px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 0 0 20px 25px;
+    bottom: 20px;
+    cursor: default;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.cursor-default{
+    cursor: default;
+}
+
+.cursor-pointer{
+    cursor: pointer
+}
+
+#call::before{
+content: url(fontawosome/css/)
 }
