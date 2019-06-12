@@ -202,8 +202,3 @@ body{
 .cursor-pointer{
     cursor: pointer
 }
-
-
-#call::before{
-content: url(fontawosome/css/)
-}
