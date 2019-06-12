@@ -117,6 +117,7 @@ body{
 #dhead{
     background-color: #636262;
     padding: 10px;
+    border-bottom: #ffc107 7px solid;
 }
 
 #img-mee{
@@ -134,20 +135,20 @@ body{
     color: #ffc107;
 }
 
-#mee-birth::before{
+.mee-birth::before{
     content: "روز تولد: ";
     color: #ffc107;
     padding-left: 6px;
 }
 
-#mee-sarbaz::before{
+.mee-sarbaz::before{
     content: "وضعیت تاهل : ";
     color: #ffc107;
     padding-left: 6px;
 }
 
-#mee-mogarad::before{
-    content: "روز سربازی: ";
+.mee-mogarad::before{
+    content: "وضعیت سربازی: ";
     color: #ffc107;
     padding-left: 6px;
 }
