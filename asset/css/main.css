@@ -74,7 +74,7 @@ body{
 
     .rad{
         width: 100%;
-        background-image: url(../img/call.jpg)
+        background-image: url(../img/call.png);
     }
 }
 
@@ -124,6 +124,11 @@ body{
 
     }
     /*پایان منو در سایز گوشی*/
+
+    .rad{
+        background-image: url(../img/call-phone.png);
+    }
+
 
     #d-img{
         display: flex;
@@ -321,8 +326,4 @@ body{
 
 .nonedecor:hover{
     text-decoration: none;
-}
-
-.rad{
-    background-image: url(../img/call.jpg)
 }
