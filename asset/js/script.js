@@ -9,7 +9,7 @@ $(document).ready(function () {
         if ($(window).width() > 1005) {
             $(".nav-item").slideDown(0);
         }
-        else{
+        else {
             $(".nav-item").slideUp(0);
         }
     });
@@ -37,4 +37,45 @@ $(document).ready(function () {
     }
     /* پایان اضافه شدن عرض با اسکرول  */
     /*  document.execCommand("copy"); */
+
+    $(".hover-one").hover(function () {
+        // over
+        $(".hover-one").css("transform", "scale(0.7)");
+        $(this).css("transform", "rotate(180deg)");
+    }, function () {
+        // out
+        $(".hover-one").css("transform", "scale(1)");
+    }
+    );
+    
+
+    $(".hover-two").hover(function () {
+        // over
+        $(".hover-two").css("transform", "scale(0.7)");
+        $(this).css("transform", "rotate(180deg)");
+    }, function () {
+        // out
+        $(".hover-two").css("transform", "scale(1)");
+    }
+    );
+
+    $(".hover-three").hover(function () {
+        // over
+        $(".hover-three").css("transform", "scale(0.7)");
+        $(this).css("transform", "rotate(180deg)");
+    }, function () {
+        // out
+        $(".hover-three").css("transform", "scale(1)");
+    }
+    );
+
+    $(".hover-four").hover(function () {
+        // over
+        $(".hover-four").css("transform", "scale(0.7)");
+        $(this).css("transform", "rotate(180deg)");
+    }, function () {
+        // out
+        $(".hover-four").css("transform", "scale(1)");
+    }
+    );
 });

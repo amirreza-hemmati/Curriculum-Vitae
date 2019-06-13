@@ -411,3 +411,7 @@ body{
 .rog{
     margin-right: 20px;
 }
+
+.hover-four , .hover-three , .hover-two , .hover-one {
+    transition: 1.1s;
+}
