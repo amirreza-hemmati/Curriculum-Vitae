@@ -41,7 +41,7 @@ $(document).ready(function () {
     $(".hover-one").hover(function () {
         // over
         $(".hover-one").css("transform", "scale(0.7)");
-        $(this).css("transform", "rotate(180deg)");
+        $(this).css("transform", "rotate(-180deg)");
     }, function () {
         // out
         $(".hover-one").css("transform", "scale(1)");
@@ -62,7 +62,7 @@ $(document).ready(function () {
     $(".hover-three").hover(function () {
         // over
         $(".hover-three").css("transform", "scale(0.7)");
-        $(this).css("transform", "rotate(180deg)");
+        $(this).css("transform", "rotate(-180deg)");
     }, function () {
         // out
         $(".hover-three").css("transform", "scale(1)");
@@ -78,4 +78,12 @@ $(document).ready(function () {
         $(".hover-four").css("transform", "scale(1)");
     }
     );
+
+    var stick = document.getElementById("stick");
+    stick.style.position = "relative";
+    $(window).scroll(function () { 
+            stick.style.top = window.scrollY + "px"
+            var call = document.getElementById("we-call");
+            call.style.top = "-5px";
+    });
 });
