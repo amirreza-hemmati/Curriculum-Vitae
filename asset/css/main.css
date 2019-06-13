@@ -270,8 +270,9 @@ body{
 }
 
 #d-intel:hover .fa-globe{
-    transform: rotate(45deg)
-    translate(0 , -10px)
+    transform: 
+    rotate(180deg)
+    translate(0 , 5px)
     scale(.8);
 }
 
