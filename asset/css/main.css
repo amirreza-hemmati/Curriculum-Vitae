@@ -73,8 +73,8 @@ body{
     }
 
     .rad{
-        border-radius: 0 0 40px 40px;
         width: 100%;
+        background-image: url(../img/call.jpg)
     }
 }
 
@@ -234,4 +234,95 @@ body{
     padding-left: 10px;
     font-size: 24px;
     cursor: default;
+}
+
+#d-intel{
+    width: 75%;
+    background-color: white;
+    padding-right: 35px;
+    position: relative;
+}
+
+
+#earth{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+.fa-globe{
+    position: absolute;
+    font-weight: 900;
+    font-size: 24px;
+    cursor: default;
+    border: 10px solid white;
+    border-radius: 50%;
+    z-index: 2;
+    transform: translate(0 , -9px);
+    transition: 1s;
+}
+
+#d-intel:hover .fa-globe{
+    transform: rotate(3deg)
+}
+
+#d-intel::after
+{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 27px 28px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-color: transparent transparent #fff transparent;
+    height: 100%;
+    transform: translate(-28px, 0);
+}
+
+/* 
+    ممد کاش یک دیو دیگه تعریف کنیم تو اون بزنیم
+    ا
+*/
+
+#instagram{
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+#instagram > i{
+    padding-left: 15px;
+    color: #d83cff;
+    font-size: 1.8rem
+}
+
+#telegram > i{
+    padding-left: 15px;
+    color: #00aeff;
+    font-size: 1.8rem    
+}
+
+#telegram{
+    font-size: 22px;
+    text-decoration: none;
+}
+/* 
+.rad{
+    background-image: url(../img/call.png);
+} */
+
+.nonedecor{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nonedecor:hover{
+    text-decoration: none;
+}
+
+.rad{
+    background-image: url(../img/call.jpg)
 }

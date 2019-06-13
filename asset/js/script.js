@@ -6,8 +6,11 @@ $(document).ready(function () {
     });
 
     $(window).resize(function () {
-        if ($(window).width() > 680) {
+        if ($(window).width() > 1005) {
             $(".nav-item").slideDown(0);
+        }
+        else{
+            $(".nav-item").slideUp(0);
         }
     });
 
