@@ -13,6 +13,8 @@
     <script src="asset/js/script.js"></script>
     <link rel="shourt icon" href="asset/img/title.png">
     <title>رزومه امیررضا همتی</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -127,29 +129,47 @@
 
             <div id="d-body1" class="bg-light">
                 <div>
-                    <div class="text-right writer-mee">
-                        <h1 class="cursor-default onselect">
+                    <div class="text-right writer-mee" id="sc">
+                        <h3 class="cursor-default onselect">
                             درباره من :
-                        </h1>
+                        </h3>
                         <br>
                         <p id="animate" class="pd-right display-text">
                             <i class="fas fa-child iconmee"></i>
                         </p>
                         <script src="asset/js/text.js"></script>
                         <script>
-                            new TypeIt('#animate', {
-                                speed: 200,
-                                startDelay: 900
-                            })
-                                .type('سلام ..<br>امیررضا همتی هستم<br>شانزده ساله <br> برنامه نویس و طراح وب<br>عاشق برنامه نویسی بوده و آن را با اشتیاق دنبال میکنم<br>لطفا برای اطلاعات بیشتر ادامه متن را بخوانید.<br>با سپاس فراوان.')
-                                // .type('سلام ..')
-                                 .go();
+                            if ($(window).width() > 1005) {
+                                new TypeIt('#animate', {
+                                    speed: 200,
+                                    startDelay: 900
+                                })
+                                    .type('سلام ..<br>امیررضا همتی هستم<br>شانزده ساله <br> برنامه نویس و طراح وب<br>عاشق برنامه نویسی بوده و آن را با اشتیاق دنبال میکنم<br>لطفا برای اطلاعات بیشتر ادامه متون زیر را بخوانید.<br>با سپاس فراوان.')
+                                    // .type('سلام ..')
+                                    .go();
+                            }
+                            else {
+                                $(window).scroll(function () {
+                                    if ($(window).width() <= 1005) {
+                                        var sctop = document.getElementById("d-body1").offsetTop;
+                                        if ($(window).scrollTop() <= (sctop - 50)) {
+                                            new TypeIt('#animate', {
+                                                speed: 200,
+                                                startDelay: 900
+                                            })
+                                                .type('سلام ..<br>امیررضا همتی هستم<br>شانزده ساله <br> برنامه نویس و طراح وب<br>عاشق برنامه نویسی بوده و آن را با اشتیاق دنبال میکنم<br>لطفا برای اطلاعات بیشتر ادامه متون زیر را بخوانید.<br>با سپاس فراوان.')
+                                                // .type('سلام ..')
+                                                .go();
+                                        }
+                                    }
+                                });
+                            }
                         </script>
 
                         <br>
-                        <h1 class="cursor-default onselect">
+                        <h3 class="cursor-default onselect">
                             سوابق تحصیلی :
-                        </h1>
+                        </h3>
                         <br>
                         <p id="man" class="display-text">
                             <i class="fas fa-briefcase iconmee"></i>
@@ -163,47 +183,135 @@
                             ورودی سال: 1397
                         </p>
                         <br>
-                        <h1 class="cursor-default onselect">
+                        <h3 class="cursor-default onselect">
                             زبان انگلیسی :
-                        </h1>
+                        </h3>
                         <br>
                         <div id="man" class="display-text">
                             <i class="fas fa-globe-europe iconmee"></i>
                         </div>
                         <div class="display-text pd-right">
-                            <div>
+                            <div class="onselect3">
                                 <br>
                                 مهارت خواندن
-                                <span class="zaban bg-success"></span>
-                                <span class="zaban"></span>
-                                <span class="zaban"></span>
-                                <span class="zaban"></span>
+                                <span class="zaban rounded-circle bg-success"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
                             </div>
-                            <div>
+                            <div class="onselect3">
                                 <br>
                                 مهارت نوشتن
-                                <span class="zaban bg-success"></span>
-                                <span class="zaban"></span>
-                                <span class="zaban"></span>
-                                <span class="zaban"></span>
+                                <span class="zaban rounded-circle bg-success"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
                             </div>
-                            <div>
+                            <div class="onselect3">
                                 <br>
                                 مهارت صحبت کردن
-                                <span class="zaban"></span>
-                                <span class="zaban"></span>
-                                <span class="zaban"></span>
-                                <span class="zaban"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
                             </div>
-                            <div>
+                            <div class="onselect3">
                                 <br>
                                 مهارت گوش دادن
-                                <span class="zaban bg-success"></span>
-                                <span class="zaban"></span>
-                                <span class="zaban"></span>
-                                <span class="zaban"></span>
+                                <span class="zaban rounded-circle bg-success"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
+                                <span class="zaban bg-dark rounded-circle"></span>
                             </div>
                         </div>
+
+                        <br><br>
+                        <h3 class="cursor-default onselect">
+                            تخصص های من :
+                        </h3>
+                        <br>
+                        <br>
+                        <p id="man" class="display-text" style="font-weight: bold">
+                            <i class="fas fa-code iconmee" style="color: rgb(240, 85, 64);"></i>
+                            <br><br>
+                            HTML , HTML5
+                            <br>
+                        </p>
+                        <br><br>
+                        <div>
+                            <div style="width: 100%">
+                                <div class="progress bg-dark ltr" style="width:70%;height: 30px;">
+                                    <div class="progress-bar progress-bar-striped active bg-success" role="progressbar"
+                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                        <span style="font-size: 18px;" class="onselect cursor-default">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr><br>
+                        <p id="man" class="display-text" style="font-weight: bold">
+                            <i class="fab fa-css3 iconmee text-info"></i>
+                            <br><br>
+                            CSS , CSS3
+                            <br>
+                        </p>
+                        <br><br>
+                        <div>
+                            <div style="width: 100%">
+                                <div class="progress bg-dark ltr" style="width:70%;height: 30px;">
+                                    <div class="progress-bar progress-bar-striped active bg-success" role="progressbar"
+                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                        <span style="font-size: 18px;" class="onselect cursor-default">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr><br>
+                        <p id="man" class="display-text" style="font-weight: bold">
+                            <i class="fab fa-blogger iconmee" style="color:rgb(139, 22, 120);"></i>
+                            <br><br>
+                            bootstrap
+                            <br>
+                        </p>
+                        <br><br>
+                        <div>
+                            <div style="width: 100%">
+                                <div class="progress bg-dark ltr" style="width:70%;height: 30px;">
+                                    <div class="progress-bar progress-bar-striped active bg-success" role="progressbar"
+                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                        <span style="font-size: 18px;" class="onselect cursor-default">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr><br>
+                        <p id="man" class="display-text" style="font-weight: bold">
+                            <i class="fab fa-js iconmee text-warning"></i>
+                            <br><br>
+                            javascript
+                            <br>
+                        </p>
+                        <br><br>
+                        <div>
+                            <div style="width: 100%">
+                                <div class="progress bg-dark ltr" style="width:70%;height: 30px;">
+                                    <div class="progress-bar progress-bar-striped active bg-success" role="progressbar"
+                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                        <span style="font-size: 18px;" class="onselect cursor-default">60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
                     </div>
                 </div>
                 <div class="abu onselect cursor-default">

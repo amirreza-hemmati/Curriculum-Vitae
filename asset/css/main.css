@@ -403,3 +403,9 @@ body{
     padding-right: 17px;
     margin-right: 8px;
 }
+
+.onselect3::selection{
+    background-color: black;
+    color: white; 
+}
+
