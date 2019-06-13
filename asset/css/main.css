@@ -221,6 +221,7 @@ body{
     padding-left: 10px;
     font-size: 24px;
     cursor: default;
+    color: rgb(30, 179, 30);
 }
 
 #location::before{
@@ -239,6 +240,7 @@ body{
     padding-left: 10px;
     font-size: 24px;
     cursor: default;
+    color: #157dad;
 }
 
 #d-intel{
@@ -268,7 +270,9 @@ body{
 }
 
 #d-intel:hover .fa-globe{
-    transform: rotate(3deg)
+    transform: rotate(45deg)
+    translate(0 , -10px)
+    scale(.8);
 }
 
 #d-intel::after
