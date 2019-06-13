@@ -11,6 +11,8 @@ body{
     direction: ltr;
 }
 
+
+/* computer */
 @media only screen and (min-width: 1005px)
 {
     /*نمایش منو در سایز بزرگ تر از گوشی*/
@@ -76,8 +78,16 @@ body{
         width: 100%;
         background-image: url(../img/call.png);
     }
+
+    #d-intel:hover .fa-globe{
+        transform: 
+        rotate(180deg)
+        translate(0 , 4px)
+        scale(.8);
+    }
 }
 
+/* mobile */
 @media only screen and (max-width: 1005px)
 {
     /*نمایش منو در سایز گوشی*/
@@ -187,11 +197,6 @@ body{
     padding-left: 6px;
 }
 
-#d-body{
-    width: 100%;
-    height: 100vh;
-}
-
 #we-call{
     background-color: #636262;
     position: relative;
@@ -269,13 +274,6 @@ body{
     transition: 1s;
 }
 
-#d-intel:hover .fa-globe{
-    transform: 
-    rotate(180deg)
-    translate(0 , 5px)
-    scale(.8);
-}
-
 #d-intel::after
 {
     content: '';
@@ -331,4 +329,77 @@ body{
 
 .nonedecor:hover{
     text-decoration: none;
+}
+
+#text-shadow{
+    position: sticky;
+    top: 50%;
+    right: 50%;
+    color: #7a7a7a;
+}
+
+#d-body1{
+    position: relative;
+}
+
+.abu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 6;
+    transform: translate(-50% , 50%)
+    rotate(-45deg);
+    opacity: 0.3;
+}
+
+.abu>h1{
+    font-size: 55px;
+}
+
+#text-mee{
+    direction: rtl;
+    text-align: right;
+    padding: 20px;
+}
+
+.writer-mee{
+    padding: 10px 30px;
+}
+
+.display-text{
+    font-size: 21px;
+    font-weight: 400;
+    border-right: 3px solid black;
+}
+
+#man{
+    padding-right: 40px;
+}
+
+.iconmee{
+    font-weight: 900;
+    padding-left: 25px;
+    font-size: 40px;
+    cursor: default;
+}
+
+
+.display-text::selection{
+    background-color: #000000;
+    color: #fff;
+}
+
+.pd-right{
+    padding-right: 40px;
+}
+
+.pddo{
+    padding-right: 80px;
+}
+
+.zaban{
+    border: 2px solid black;
+    padding-right: 2px;
+    padding-right: 17px;
+    margin-right: 8px;
 }
