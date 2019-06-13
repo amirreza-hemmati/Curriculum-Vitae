@@ -79,11 +79,14 @@ $(document).ready(function () {
     }
     );
 
-    var stick = document.getElementById("stick");
-    stick.style.position = "relative";
-    $(window).scroll(function () { 
-            stick.style.top = window.scrollY + "px"
-            var call = document.getElementById("we-call");
-            call.style.top = "-5px";
-    });
+    if(window.innerWidth > 1005)
+    {
+        var stick = document.getElementById("stick");
+        stick.style.position = "relative";
+        $(window).scroll(function () { 
+                stick.style.top = window.scrollY + "px"
+                var call = document.getElementById("we-call");
+                call.style.top = "-5px";
+        });
+    }
 });
