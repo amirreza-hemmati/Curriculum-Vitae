@@ -470,9 +470,19 @@
                                 To: 'dev.hemmatiresumes@gmail.com',
                                 From: "dev.hemmatiresumes@gmail.com",
                                 Subject: "send an email for Resumes Hemmati",
-                                Body: "<p style='text-align:center ; font-size : 25px ; color : red'>نام و نام خانوادگی: " + name  + " " + family + " <br> ایمیل ارسال شده از : " + emails + "</p><hr/><p style='text-align:right ; padding: 20px ; font-size: 2rem'>" + text + "</p>"
+                                Body: "<p style='text-align:center ; font-size : 25px ; color : red'>نام و نام خانوادگی: " + name + " " + family + " <br> ایمیل ارسال شده از : " + emails + "</p><hr/><p style='text-align:right ; padding: 20px ; font-size: 2rem'>" + text + "</p>"
                             }).then(
                                 message => alert(message)
+                            );
+                            Email.send({
+                                Host: "smtp.gmail.com",
+                                Username: "dev.hemmatiresumes@gmail.com",
+                                Password: "amir2018",
+                                To: emails,
+                                From: "dev.hemmatiresumes@gmail.com",
+                                Subject: "send an email for Resumes Hemmati",
+                                Body: "<h1 style='text-align:center ; color:red'>رزومه شخصی امیررضا همتی</h1><hr><p style='text-align:right ; font-size:18px'>سلام " + name + " " + family + "<br>باسپاس فراوان از ارسال ایمیل به امیررضا همتی سعی میشود که کوتاه ترین زمان ممکن به شما پاسخ داده شود </p>"
+                            }).then(
                             );
                         }
                     });
