@@ -47,7 +47,7 @@ $(document).ready(function () {
         $(".hover-one").css("transform", "scale(1)");
     }
     );
-    
+
 
     $(".hover-two").hover(function () {
         // over
@@ -78,15 +78,4 @@ $(document).ready(function () {
         $(".hover-four").css("transform", "scale(1)");
     }
     );
-
-    if(window.innerWidth > 1005)
-    {
-        var stick = document.getElementById("stick");
-        stick.style.position = "relative";
-        $(window).scroll(function () { 
-                stick.style.top = window.scrollY + "px"
-                var call = document.getElementById("we-call");
-                call.style.top = "-5px";
-        });
-    }
 });
