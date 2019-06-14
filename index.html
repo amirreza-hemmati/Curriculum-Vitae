@@ -146,7 +146,7 @@
                                 speed: 137,
                                 startDelay: 400
                             })
-                                .type('سلام ..<br>امیررضا همتی هستم<br>شانزده ساله <br> برنامه نویس و طراح وب<br>عاشق برنامه نویسی بوده و آن را با اشتیاق دنبال میکنم<br>لطفا برای اطلاعات بیشتر ادامه متون زیر را بخوانید.<br><br>با سپاس فراوان.')
+                                .type('سلام ..<br>امیررضا همتی هستم<br>شانزده ساله <br> برنامه نویس و طراح وب<br>عاشق برنامه نویسی بوده و آن را با اشتیاق دنبال میکنم<br>لطفا برای اطلاعات بیشتر ادامه متون زیر را بخوانید.<br><br>با سپاس فراوان.<br>')
                                 // .type('سلام ..')
                                 .go();
                         </script>
@@ -472,7 +472,8 @@
                                 Subject: "send an email for Resumes Hemmati",
                                 Body: "<p style='text-align:center ; font-size : 25px ; color : red'>نام و نام خانوادگی: " + name + " " + family + " <br> ایمیل ارسال شده از : " + emails + "</p><hr/><p style='text-align:right ; padding: 20px ; font-size: 2rem'>" + text + "</p>"
                             }).then(
-                                message => alert(message)
+                                message => alert(message),
+                                $("#name , #family , #emails , #TextArea1").val("")
                             );
                             Email.send({
                                 Host: "smtp.gmail.com",
