@@ -469,12 +469,15 @@ body{
 
 #full-scroll-top {
     transition: 0.3s;
+    display: none;
+}
+
+.full-scroll {
     position: fixed;
     z-index: 3;
     top: 90%;
     left: 15px;
     font-size: 40px;
-    display: none;
 }
 
 #full-scroll-top:hover {

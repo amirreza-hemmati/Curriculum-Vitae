@@ -148,10 +148,12 @@ $(document).ready(function () {
     /*scroll full top*/
     $(window).scroll(function () {
         if ($(window).scrollTop() > 800) {
-            $("#full-scroll-top").fadeIn(400);
+            $("#full-scroll-top").css("display","inline");
+            $("#full-scroll-top").addClass("full-scroll");
         }
         else {
-            $("#full-scroll-top").fadeOut(400);
+            $("#full-scroll-top").css("display", "none");
+            $("#full-scroll-top").removeClass("full-scroll");
         }
     });
 });
