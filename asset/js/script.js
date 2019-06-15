@@ -87,7 +87,7 @@ $(document).ready(function () {
         $(".hover-four").css("transform", "scale(1)");
     }
     );
-/*افکت های مربع*/
+    /*افکت های مربع*/
     //link1
     //link2
     //link3
@@ -100,14 +100,14 @@ $(document).ready(function () {
     function ST(event1, event2) {
         if ($(window).width() > 1005) {
             $("html , body").animate({
-                "scrollTop":event1 - 80
+                "scrollTop": event1 - 80
             }, 1000)
         }
         else {
             $(".nav-item").slideToggle(0);
             $("html , body").animate({
                 "scrollTop": event2
-            } , 1000)
+            }, 1000)
         }
     }
 
@@ -144,4 +144,14 @@ $(document).ready(function () {
         ST(WeCall, 3400);
     });
     //لینک های منو
+
+    /*scroll full top*/
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 800) {
+            $("#full-scroll-top").fadeIn(400);
+        }
+        else {
+            $("#full-scroll-top").fadeOut(400);
+        }
+    });
 });
