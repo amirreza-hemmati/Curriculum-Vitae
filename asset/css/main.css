@@ -421,6 +421,7 @@ body{
 
 .all-btn{
     border: 1px solid black;
+    cursor: text !important;
 }
 
 

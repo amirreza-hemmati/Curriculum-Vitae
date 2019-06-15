@@ -385,13 +385,20 @@
                         <textarea id="TextArea1" rows="10" placeholder="لطفا پیام خود را بنویسید" class="btn-block btn all-btn" style="padding: 20px;text-align: right"></textarea>
                     </div>
                     <br />
-                    <div class="text-right" id="subform" style="padding: 0 55px">
-                        <button type="button" class="btn btn-success" style="display: inline;" id="submit" name="submit">ارسال پیام</button>
-                        <button type="button" class="btn btn-danger float-left" id="reset" name="reset">پاک کن</button>
+                    <div class="text-right" id="subform" style="padding: 0 55px;display:flex; justify-content:space-between">
+                        <button type="button" class="btn btn-success" id="submit" name="submit">ارسال پیام</button>
+                        <i class="fas fa-caret-square-up fa-2x cursor-pointer" id="full-scroll-top"></i>
+                        <button type="button" class="btn btn-danger" id="reset" name="reset">پاک کن</button>
                     </div>
                 </div>
                 <script src="asset/js/smtpJS.js"></script>
                 <script>
+                    $("#full-scroll-top").click(function (e) {
+                        $("html , body").animate({
+                            "scrollTop":0
+                        },1000)
+                    });
+
                     var Name = document.getElementById("name");
                     var Family = document.getElementById("family");
                     var Email = document.getElementById("emails");

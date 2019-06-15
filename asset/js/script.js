@@ -3,6 +3,14 @@ $(document).ready(function () {
     $("#menu-phone").click(function (e) {
         $(".nav-item").slideToggle(500);
         $("body").toggleClass("resizing");
+        $("body").toggleClass("scrollMenu");
+        if ($("body").hasClass("scrollMenu")) {
+            $(window).scroll(function () {
+                if ($(window).width() < 1005) {
+                    $(".nav-item").slideUp(300);
+                }
+            });
+        }
     });
 
     $(window).resize(function () {
