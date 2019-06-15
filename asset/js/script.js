@@ -18,10 +18,10 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
-            $("#nav").addClass("fixed");
+            $("header").addClass("fixed");
         }
         else {
-            $("#nav").removeClass("fixed");
+            $("header").removeClass("fixed");
         }
     });
     /* پایان کد اسلاید شدن منو و فیکس منو */
@@ -38,6 +38,7 @@ $(document).ready(function () {
     /* پایان اضافه شدن عرض با اسکرول  */
     /*  document.execCommand("copy"); */
 
+    /*افکت های مربع*/
     $(".hover-one").hover(function () {
         // over
         $(".hover-one").css("transform", "scale(0.7)");
@@ -78,4 +79,61 @@ $(document).ready(function () {
         $(".hover-four").css("transform", "scale(1)");
     }
     );
+/*افکت های مربع*/
+    //link1
+    //link2
+    //link3
+    //link4
+    //link5
+    //link6
+    //link7
+    //link8
+    //لینک های منو
+    function ST(event1, event2) {
+        if ($(window).width() > 1005) {
+            $("html , body").animate({
+                "scrollTop":event1 - 80
+            }, 1000)
+        }
+        else {
+            $(".nav-item").slideToggle(0);
+            $("html , body").animate({
+                "scrollTop": event2
+            } , 1000)
+        }
+    }
+
+    $("#link1").click(function (e) {
+        ST(0, 430);
+    });
+
+    $("#link2").click(function (e) {
+        ST(0, 685);
+    });
+
+    $("#link3").click(function (e) {
+        var WeCall = document.getElementById("sc").offsetTop;
+        ST(WeCall, 900);
+    });
+
+    $("#link4").click(function (e) {
+        var WeCall = document.getElementById("schools").offsetTop;
+        ST(WeCall, 1375);
+    });
+
+    $("#link5").click(function (e) {
+        var WeCall = document.getElementById("english").offsetTop;
+        ST(WeCall, 1660);
+    });
+
+    $("#link6").click(function (e) {
+        var WeCall = document.getElementById("takhasos-mee").offsetTop;
+        ST(WeCall, 2200);
+    });
+
+    $("#link8").click(function (e) {
+        var WeCall = document.getElementById("send-one").offsetTop;
+        ST(WeCall, 3400);
+    });
+    //لینک های منو
 });

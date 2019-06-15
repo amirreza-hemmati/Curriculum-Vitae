@@ -20,6 +20,10 @@ body{
         color: white;
         transition: 0.4s;
     }
+
+    .li-none{
+        display: none;
+    }
     
     .nav-link:hover{
         color: white;
@@ -131,12 +135,6 @@ body{
     #menu-phone > i {
         cursor: pointer;
         font-size: 27px;
-    }
-    .fixed{
-        width: 100%;
-        position: fixed;
-        z-index: 10;
-
     }
     /*پایان منو در سایز گوشی*/
 
@@ -434,4 +432,36 @@ body{
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+}
+
+#down{
+    animation: downtop .8s infinite;
+    position: relative;
+}
+
+@keyframes downtop {
+    0% {
+    }
+
+    25% {
+        top: 10px;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    75% {
+        top: 10px;
+    }
+
+    100% {
+        bottom: 10px;
+    }
+}
+
+.fixed {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
