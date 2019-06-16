@@ -18,8 +18,20 @@
 </head>
 
 <body>
-    <div id="full-scroll-top">
-        <i class="fas fa-caret-square-up cursor-pointer"></i>
+    <div id="fixeding"></div>
+    <div id="fixeding2">
+        <div id="gif">
+            <div class="d-flex justify-content-center">
+                <img src="asset/img/animate.gif" alt="انیمیشن" />
+                <i class="fas fa-grin-hearts text-warning rounded-circle fa-7x shows" style="padding: 1px; margin-top: 25px ; background-color:red;"></i>
+            </div>
+            <br />
+            <p class="text-center display-4 shows" style="display: none">
+                پیام ارسال شد
+            </p>
+            <br />
+            <button type="button" class="btn btn-success btn-block shows" style="display: none">باشه</button>
+        </div> 
     </div>
     <header id="header">
         <div>
@@ -31,14 +43,14 @@
                     <i class="fas fa-align-justify"></i>
                 </div>
                 <ul class="nav rtl" id="menu">
-                    
+
                     <li class="nav-item bg-dark" id="link1"><span class="nav-link cursor-pointer li-none">اطلاعات تماس</span></li>
                     <li class="nav-item bg-dark" id="link2"><span class="nav-link cursor-pointer li-none">شبکه های اجتماعی</span></li>
                     <li class="nav-item bg-dark" id="link3"><span class="nav-link cursor-pointer">درباره من</span></li>
                     <li class="nav-item bg-dark" id="link4"><span class="nav-link cursor-pointer">سوابق تحصیلی</span></li>
                     <li class="nav-item bg-dark" id="link5"><span class="nav-link cursor-pointer">زبان انگلیسی</span></li>
-                    <li class="nav-item bg-dark" id="link6"><span class="nav-link cursor-pointer">تخصص ها</span></li>
                     <li class="nav-item bg-dark" id="link7"><span class="nav-link cursor-pointer">سوابق کاری</span></li>
+                    <li class="nav-item bg-dark" id="link6"><span class="nav-link cursor-pointer">تخصص ها</span></li>
                     <li class="nav-item bg-dark" id="link8"><span class="nav-link cursor-pointer">ارسال پیام</span></li>
                 </ul>
             </nav>
@@ -91,7 +103,51 @@
         </div>
         <div id="d-body" class="rtl">
             <div id="d-body2" class="bg-dark">
-                <div id="stick">
+                <div class="li-none">
+
+                    <div class="rad">
+                        <div id="we-call">
+                            <p class="text-light onselect">
+                                اطلاعات تماس
+                            </p>
+                        </div>
+
+                        <div class="text-center text-dark" id="sT1">
+                            <a href="mailto:dev.amirhemmati@outlook.com" id="email"
+                               title="لطفا برای ارسال ایمیل به بنده کلیک کنید"
+                               class="nonedecor text-light">dev.amirhemmati@outlook.com</a>
+                            <br>
+                            <a href="tel:+989399440750" id="call" class="nonedecor text-light"
+                               title="لطفا برای تماس با بنده کلیک کنید">09399440750</a>
+                            <br>
+                            <span class="nonedecor text-light cursor-default" id="location">شیراز</span>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div>
+                        <br><br>
+                        <div class="text-right" id="d-intel">
+                            <i class="fas fa-globe"></i>
+                            <p id="earth" class="onselect" style="cursor: default">
+                                شبکه های اجتماعی
+                            </p>
+                        </div>
+                        <div class="text-right" style="padding-right: 23px;">
+                            <br>
+                            <a href="https://www.instagram.com/dev_amir1382/"
+                               title="لطفا برای ورود به شبکه اجتماعی مورد نظر  کلیک کنید" class="text-light"
+                               id="instagram" target="-blank"><i class="fab fa-instagram"></i>dev_amir1382</a>
+                            <br><br>
+                            <a href="https://t.me/dev_amirhemmati"
+                               title="لطفا برای ورود به شبکه اجتماعی مورد نظر  کلیک کنید" class="text-light"
+                               id="telegram" target="-blank"><i class="fab fa-telegram"></i>dev_amirhemmati@</a>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div id="stick" class="display-none">
 
                     <div class="rad">
                         <div id="we-call">
@@ -164,7 +220,7 @@
                             سوابق تحصیلی :
                         </h3>
                         <br>
-                        <p id="man" class="display-text">
+                        <p class="display-text man">
                             <i class="fas fa-briefcase iconmee" style="color:rgb(179, 106, 11)"></i>
                             <br>
                             سال تحصیلی : نهم
@@ -180,7 +236,7 @@
                             زبان انگلیسی :
                         </h3>
                         <br>
-                        <div id="man" class="display-text">
+                        <div class="display-text man">
                             <i class="fas fa-globe-europe iconmee" style="color:rgb(18, 134, 150)"></i>
                         </div>
                         <div class="display-text pd-right">
@@ -225,14 +281,57 @@
                                 <i class="fas fa-square hover-four text-dark" style="font-size:35px"></i>
                             </div>
                         </div>
-
+                        <br /><br />
+                        <div id="work-mee">
+                            <h3 class="cursor-default onselect text-right" id="takhasos-mee1">
+                                سوابق کاری :
+                            </h3>
+                            <br>
+                            <table class="table table-bordered table-striped table-hover table-lg table-dark">
+                                <tr>
+                                    <th></th>
+                                    <th>نام</th>
+                                    <th>لینک ورود به وب</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>رزومه شخصی امیررضا همتی</td>
+                                    <td><a href="https://amirreza-hemmati.github.io/Curriculum-Vitae/" target="_blank" class="text-info" style="text-decoration:none">لینک</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>ساخت وب سایت</td>
+                                    <td><a href="https://amirreza-hemmati.github.io/amirhemmati/index.html" target="_blank" class="text-info" style="text-decoration:none">لینک</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>گوشی و موزیک پلیر</td>
+                                    <td><a href="https://amirreza-hemmati.github.io/amirhemmati/phone.html" target="_blank" class="text-info" style="text-decoration:none">لینک</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>صفحه شطرنج</td>
+                                    <td><a href="https://amirreza-hemmati.github.io/chess/chess.html" target="_blank" class="text-info" style="text-decoration:none">لینک</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>وب سایت تابینو ( به صورت گروهی نسخه دمو )</td>
+                                    <td><a href="http://tabino.ml" target="_blank" class="text-info" style="text-decoration:none">لینک</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>ماشین حساب</td>
+                                    <td><a href="https://amirreza-hemmati.github.io/amirhemmati/calculator.html" target="_blank" class="text-info" style="text-decoration:none">لینک</a></td>
+                                </tr>
+                            </table>
+                        </div>
                         <br><br>
                         <h3 class="cursor-default onselect" id="takhasos-mee">
                             تخصص های من :
                         </h3>
                         <br>
                         <br>
-                        <p id="man" class="display-text" style="font-weight: bold">
+                        <p class="display-text man" style="font-weight: bold">
                             <i class="fas fa-code iconmee" style="color: rgb(240, 85, 64);"></i>
                             <br>
                             HTML , HTML5
@@ -251,7 +350,7 @@
                         </div>
 
                         <hr>
-                        <p id="man" class="display-text" style="font-weight: bold">
+                        <p class="display-text man" style="font-weight: bold">
                             <i class="fab fa-css3 iconmee text-info"></i>
                             <br>
                             CSS , CSS3
@@ -270,7 +369,7 @@
                         </div>
 
                         <hr>
-                        <p id="man" class="display-text" style="font-weight: bold">
+                        <p class="display-text man" style="font-weight: bold">
                             <i class="fab fa-blogger iconmee" style="color:rgb(139, 22, 120);"></i>
                             <br>
                             Bootstrap
@@ -288,7 +387,7 @@
                             </div>
                         </div>
                         <hr>
-                        <p id="man" class="display-text" style="font-weight: bold">
+                        <p class="display-text man" style="font-weight: bold">
                             <i class="fab fa-js iconmee text-warning"></i>
                             <br>
                             Javascript
@@ -306,7 +405,7 @@
                             </div>
                         </div>
                         <hr>
-                        <p id="man" class="display-text" style="font-weight: bold">
+                        <p class="display-text man" style="font-weight: bold">
                             <i class="fas fa-file-signature iconmee" style="color: rgb(22, 8, 99);"></i>
                             <br>
                             Jquery
@@ -325,7 +424,7 @@
                         </div>
                         <hr>
 
-                        <p id="man" class="display-text" style="font-weight: bold">
+                        <p class="display-text man" style="font-weight: bold">
                             <i class="fas fa-code-branch iconmee" style="color: rgb(255, 167, 52);"></i>
                             <br>
                             Git
@@ -341,186 +440,184 @@
                                     </div>
                                 </div>
                             </div>
+                            <br>
                         </div>
-                        <br>
                     </div>
-                </div>
-                <div class="bs-form" id="form">
-                    <p class="text-center bg-dark text-light" id="send-one" style="padding: 10px ">
-                        ارسال پیام به امیرضا همتی
-                        <br><br>
-                        <i class="fas fa-arrow-down fa-2x" id="down"></i>
-                    </p>
-                    <div id="imoji" class="text-center">
-                        <i class="fas fa-smile fa-10x text-warning bg-dark" style="padding: 3px ; border-radius: 50% ;"></i>
-                        <!--
-                        imoji index: fas fa-laugh fa-8x text-warning bg-dark
-                        imoji laugh: fas fa-laugh
-                        imoji sad: fas fa-sad-cry
-                        imoji grin: fas fa-grin-hearts
-                                        -->
-                    </div>
-                    <div style="padding: 0 20px" class="text-center">
+                    <div class="bs-form" id="form">
+                        <div>
+                            <p class="text-center bg-dark text-light" id="send-one" style="padding: 10px ">
+                                ارسال پیام به امیرضا همتی
+                                <br><br>
+                                <i class="fas fa-arrow-down fa-2x" id="down"></i>
+                            </p>
+                        </div>
+                        <div id="imoji" class="text-center">
+                            <i class="fas fa-smile fa-10x text-warning bg-dark" style="padding: 3px ; border-radius: 50% ;"></i>
+                            <!--
+                            imoji index: fas fa-laugh fa-8x text-warning bg-dark
+                            imoji laugh: fas fa-laugh
+                            imoji sad: fas fa-sad-cry
+                            imoji grin: fas fa-grin-hearts
+                            -->
+                        </div>
+                        <div style="padding: 0 20px" class="text-center">
+                            <br />
+                            <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-name">
+                                <p class="onselect cursor-default">لطفا قسمت نام را تکمیل فرمایید</p>
+                            </div>
+
+                            <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-family">
+                                <p class="onselect cursor-default">لطفا قسمت نام خانوادگی را تکمیل فرمایید</p>
+                            </div>
+
+                            <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-emails">
+                                <p class="onselect cursor-default">لطفا قسمت ایمیل را تکمیل فرمایید</p>
+                            </div>
+
+                            <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-lister">
+                                <p class="onselect cursor-default">ایمیل نوشته شده صحیح نمیباشد</p>
+                            </div>
+
+                            <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-TextArea1">
+                                <p class="onselect cursor-default">لطفا قسمت پیام را تکمیل فرمایید</p>
+                            </div>
+
+                            <input type="text" class="btn btn-block all-btn" id="name" name="name" placeholder="لطفا نام خود را وارد نمایید">
+                            <input type="text" class="btn btn-block all-btn" id="family" name="family" placeholder="لطفا نام خانوادگی خود را وارد نمایید">
+                            <input type="email" class="btn btn-block all-btn" id="emails" name="email" placeholder="لطفا ایمیل خود را وارد نمایید">
+                            <textarea id="TextArea1" rows="10" placeholder="لطفا پیام خود را بنویسید" class="btn-block btn all-btn" style="padding: 20px;text-align: right"></textarea>
+                        </div>
                         <br />
-                        <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-name">
-                            <p class="onselect cursor-default">لطفا قسمت نام را تکمیل فرمایید</p>
+                        <div class="text-right" id="subform" style="padding: 0 55px;display:flex; justify-content:space-between">
+                            <button type="button" class="btn btn-success" id="submit" name="submit">ارسال پیام</button>
+                            <button type="button" class="btn btn-danger" id="reset" name="reset">پاک کن</button>
                         </div>
-
-                        <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-family">
-                            <p class="onselect cursor-default">لطفا قسمت نام خانوادگی را تکمیل فرمایید</p>
-                        </div>
-
-                        <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-emails">
-                            <p class="onselect cursor-default">لطفا قسمت ایمیل را تکمیل فرمایید</p>
-                        </div>
-
-                        <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-lister">
-                            <p class="onselect cursor-default">ایمیل نوشته شده صحیح نمیباشد</p>
-                        </div>
-
-                        <div class="bg-danger text-light" style="width: 100% ; display:none;border-radius: 20px" id="error-TextArea1">
-                            <p class="onselect cursor-default">لطفا قسمت پیام را تکمیل فرمایید</p>
-                        </div>
-
-                        <input type="text" class="btn btn-block all-btn" id="name" name="name" placeholder="لطفا نام خود را وارد نمایید">
-                        <input type="text" class="btn btn-block all-btn" id="family" name="family" placeholder="لطفا نام خانوادگی خود را وارد نمایید">
-                        <input type="email" class="btn btn-block all-btn" id="emails" name="email" placeholder="لطفا ایمیل خود را وارد نمایید">
-                        <textarea id="TextArea1" rows="10" placeholder="لطفا پیام خود را بنویسید" class="btn-block btn all-btn" style="padding: 20px;text-align: right"></textarea>
                     </div>
-                    <br />
-                    <div class="text-right" id="subform" style="padding: 0 55px;display:flex; justify-content:space-between">
-                        <button type="button" class="btn btn-success" id="submit" name="submit">ارسال پیام</button>
-                        <button type="button" class="btn btn-danger" id="reset" name="reset">پاک کن</button>
-                    </div>
+                    <script src="asset/js/smtpJS.js"></script>
+                    <script>
+                        $("#full-scroll-top").click(function (e) {
+                            $("html , body").animate({
+                                "scrollTop": 0
+                            }, 1000)
+                        });
+
+                        var Name = document.getElementById("name");
+                        var Family = document.getElementById("family");
+                        var Email = document.getElementById("emails");
+                        var TextA = document.getElementById("TextArea1");
+                        var Btn = document.getElementById("submit");
+                        $("#name").keyup(function (e) {
+                            $("#error-name").fadeOut(300);
+                            if ($(this).val() == "") {
+                                $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+                            }
+                            else {
+                                $("#imoji").html("<i class='fas fa-laugh fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+                            }
+
+                            if (e.keyCode == 13) {
+                                Family.focus();
+                            }
+                        });
+
+                        $("#family").keyup(function (e) {
+                            $("#error-family").fadeOut(300);
+                            if ($(this).val() == "") {
+                                $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+                            }
+                            else {
+                                $("#imoji").html("<i class='fas fa-grin-stars fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+                            }
+
+                            if (e.keyCode == 13) {
+                                Email.focus();
+                            }
+                        });
+
+                        $("#emails").keyup(function (e) {
+                            $("#error-emails").fadeOut(300);
+                            $("#error-lister").fadeOut(300);
+                            if ($(this).val() == "") {
+                                $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+                            }
+                            else {
+                                $("#imoji").html("<i class='fas fa-dizzy fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+                            }
+
+                            if (e.keyCode == 13) {
+                                TextA.focus();
+                            }
+                        });
+
+                        $("#TextArea1").keyup(function (e) {
+                            $("#error-TextArea1").fadeOut(300);
+                            if ($(this).val() == "") {
+                                $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+                            }
+                            else {
+                                $("#imoji").html("<i class='fas fa-grin-stars fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+                            }
+                        });
+
+                        $("#reset").click(function (e) {
+                            $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+                            $(".all-btn").val("");
+                        });
+
+                        $("#submit").click(function (e) {
+                            var email = document.getElementById("emails").value;
+                            if ($("#name").val() == "") {
+                                $("#error-name").fadeIn(1000);
+                                $("#imoji").html("<i class='fas fa-frown fa-10x text-warning bg-danger' style='padding:3px;border-radius: 100% ;'></i>");
+
+                            }
+                            else if ($("#family").val() == "") {
+                                $("#error-family").fadeIn(1000);
+                                $("#imoji").html("<i class='fas fa-frown fa-10x text-warning bg-danger' style='padding:3px;border-radius: 100% ;'></i>");
+
+                            }
+                            else if ($("#emails").val() == "") {
+                                $("#error-emails").fadeIn(1000);
+                                $("#imoji").html("<i class='fas fa-frown fa-10x text-warning bg-danger' style='padding:3px;border-radius: 100% ;'></i>");
+
+                            }
+                            else if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+                                $("#error-lister").fadeIn(1000);
+                                $("#imoji").html("<i class='fas fa-frown fa-10x text-warning bg-danger' style='padding:3px;border-radius: 100% ;'></i>");
+
+                            }
+                            else if ($("#TextArea1").val() == "") {
+                                $("#error-TextArea1").fadeIn(1000);
+                            }
+                            else {
+                                var name = $("#name").val();
+                                var family = $("#family").val();
+                                var emails = $("#emails").val();
+                                var text = $("#TextArea1").val();
+                                Email.send({
+                                    SecureToken : "75a07baa-051b-4100-86a2-bb53a4e57242",
+                                    To: 'dev.hemmatiresumes@gmail.com',
+                                    From: "dev.hemmatiresumes@gmail.com",
+                                    Subject: "send an email for Resumes Hemmati",
+                                    Body: "<p style='text-align:center ; font-size : 25px ; color : red'>نام و نام خانوادگی: " + name + " " + family + " <br> ایمیل ارسال شده از : " + emails + "</p><hr/><p style='text-align:right ; padding: 20px ; font-size: 2rem'>" + text + "</p>"
+                                }).then(
+                                    message => alert(message),
+                                    $("#name , #family , #emails , #TextArea1").val("")
+                                );
+                                Email.send({
+                                    SecureToken : "75a07baa-051b-4100-86a2-bb53a4e57242",
+                                    To: emails,
+                                    From: "dev.hemmatiresumes@gmail.com",
+                                    Subject: "send an email for Resumes Hemmati",
+                                    Body: "<h1 style='text-align:center ; color:red'>رزومه شخصی امیررضا همتی</h1><hr><p style='text-align:right ; font-size:18px'>سلام " + name + " " + family + "<br>باسپاس فراوان از ارسال ایمیل به امیررضا همتی. <br> سعی میشود که کوتاه ترین زمان ممکن به شما پاسخ داده شود </p>"
+                                }).then(
+                                );
+                            }
+                        });
+
+                    </script>
+                    <br>
                 </div>
-                <script src="asset/js/smtpJS.js"></script>
-                <script>
-                    $("#full-scroll-top").click(function (e) {
-                        $("html , body").animate({
-                            "scrollTop":0
-                        },1000)
-                    });
-
-                    var Name = document.getElementById("name");
-                    var Family = document.getElementById("family");
-                    var Email = document.getElementById("emails");
-                    var TextA = document.getElementById("TextArea1");
-                    var Btn = document.getElementById("submit");
-                    $("#name").keyup(function (e) {
-                        $("#error-name").fadeOut(300);
-                        if ($(this).val() == "") {
-                            $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
-                        }
-                        else {
-                            $("#imoji").html("<i class='fas fa-laugh fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
-                        }
-
-                        if (e.keyCode == 13) {
-                            Family.focus();
-                        }
-                    });
-
-                    $("#family").keyup(function (e) {
-                        $("#error-family").fadeOut(300);
-                        if ($(this).val() == "") {
-                            $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
-                        }
-                        else {
-                            $("#imoji").html("<i class='fas fa-grin-stars fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
-                        }
-
-                        if (e.keyCode == 13) {
-                            Email.focus();
-                        }
-                    });
-
-                    $("#emails").keyup(function (e) {
-                        $("#error-emails").fadeOut(300);
-                        $("#error-lister").fadeOut(300);
-                        if ($(this).val() == "") {
-                            $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
-                        }
-                        else {
-                            $("#imoji").html("<i class='fas fa-dizzy fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
-                        }
-
-                        if (e.keyCode == 13) {
-                            TextA.focus();
-                        }
-                    });
-
-                    $("#TextArea1").keyup(function (e) {
-                        $("#error-TextArea1").fadeOut(300);
-                        if ($(this).val() == "") {
-                            $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
-                        }
-                        else {
-                            $("#imoji").html("<i class='fas fa-grin-stars fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
-                        }
-                    });
-
-                    $("#reset").click(function (e) {
-                        $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
-                        $(".all-btn").val("");
-                    });
-
-                    $("#submit").click(function (e) {
-                        var email = document.getElementById("emails").value;
-                        if ($("#name").val() == "") {
-                            $("#error-name").fadeIn(1000);
-                            $("#imoji").html("<i class='fas fa-frown fa-10x text-warning bg-danger' style='padding:3px;border-radius: 100% ;'></i>");
-
-                        }
-                        else if ($("#family").val() == "") {
-                            $("#error-family").fadeIn(1000);
-                            $("#imoji").html("<i class='fas fa-frown fa-10x text-warning bg-danger' style='padding:3px;border-radius: 100% ;'></i>");
-
-                        }
-                        else if ($("#emails").val() == "") {
-                            $("#error-emails").fadeIn(1000);
-                            $("#imoji").html("<i class='fas fa-frown fa-10x text-warning bg-danger' style='padding:3px;border-radius: 100% ;'></i>");
-
-                        }
-                        else if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
-                            $("#error-lister").fadeIn(1000);
-                            $("#imoji").html("<i class='fas fa-frown fa-10x text-warning bg-danger' style='padding:3px;border-radius: 100% ;'></i>");
-
-                        }
-                        else if ($("#TextArea1").val() == "") {
-                            $("#error-TextArea1").fadeIn(1000);
-                        }
-                        else {
-                            var name = $("#name").val();
-                            var family = $("#family").val();
-                            var emails = $("#emails").val();
-                            var text = $("#TextArea1").val();
-                            Email.send({
-                                Host: "smtp.gmail.com",
-                                Username: "dev.hemmatiresumes@gmail.com",
-                                Password: "amir2018",
-                                To: 'dev.hemmatiresumes@gmail.com',
-                                From: "dev.hemmatiresumes@gmail.com",
-                                Subject: "send an email for Resumes Hemmati",
-                                Body: "<p style='text-align:center ; font-size : 25px ; color : red'>نام و نام خانوادگی: " + name + " " + family + " <br> ایمیل ارسال شده از : " + emails + "</p><hr/><p style='text-align:right ; padding: 20px ; font-size: 2rem'>" + text + "</p>"
-                            }).then(
-                                message => alert(message),
-                                $("#name , #family , #emails , #TextArea1").val("")
-                            );
-                            Email.send({
-                                Host: "smtp.gmail.com",
-                                Username: "dev.hemmatiresumes@gmail.com",
-                                Password: "amir2018",
-                                To: emails,
-                                From: "dev.hemmatiresumes@gmail.com",
-                                Subject: "send an email for Resumes Hemmati",
-                                Body: "<h1 style='text-align:center ; color:red'>رزومه شخصی امیررضا همتی</h1><hr><p style='text-align:right ; font-size:18px'>سلام " + name + " " + family + "<br>باسپاس فراوان از ارسال ایمیل به امیررضا همتی. <br> سعی میشود که کوتاه ترین زمان ممکن به شما پاسخ داده شود </p>"
-                            }).then(
-                            );
-                        }
-                    });
-
-                </script>
-                <br>
             </div>
         </div>
     </main>

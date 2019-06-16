@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     /*   اسلاید شدن منو و فیکس منو */
     $("#menu-phone").click(function (e) {
         $(".nav-item").slideToggle(500);
@@ -92,7 +93,8 @@ $(document).ready(function () {
     //link2
     //link3
     //link4
-    //link5
+    //
+
     //link6
     //link7
     //link8
@@ -136,24 +138,52 @@ $(document).ready(function () {
 
     $("#link6").click(function (e) {
         var WeCall = document.getElementById("takhasos-mee").offsetTop;
+        ST(WeCall, 2700);
+    });
+
+    $("#link7").click(function (e) {
+        var WeCall = document.getElementById("takhasos-mee1").offsetTop;
         ST(WeCall, 2200);
     });
 
+
     $("#link8").click(function (e) {
         var WeCall = document.getElementById("send-one").offsetTop;
-        ST(WeCall, 3400);
+        ST(WeCall, 3870);
     });
     //لینک های منو
 
     /*scroll full top*/
     $(window).scroll(function () {
         if ($(window).scrollTop() > 800) {
-            $("#full-scroll-top").css("display","inline");
+            $("#full-scroll-top").css("display", "inline");
             $("#full-scroll-top").addClass("full-scroll");
         }
         else {
             $("#full-scroll-top").css("display", "none");
             $("#full-scroll-top").removeClass("full-scroll");
+        }
+    });
+
+    /* scrll full top */
+
+
+    /* stick d-body-2 */
+    $(window).scroll(function () {
+        if ($(window).width() > 1005) {
+            if ($(this).scrollTop() > 720) {
+                $("#stick").css({
+                    "position": "fixed",
+                    "width": $("#d-body2").width() + '30px',
+                    "top": "47px"
+                });
+            }
+            else {
+                $("#stick").css({
+                    "position": "relative",
+                    "top": 0,
+                });
+            }
         }
     });
 });
