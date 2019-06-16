@@ -550,10 +550,8 @@ body{
 
 #pal {
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
-    width: 60%;
-    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
