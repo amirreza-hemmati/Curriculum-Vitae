@@ -186,4 +186,73 @@ $(document).ready(function () {
             }
         }
     });
+
+    $("#full-scroll-top").click(function (e) {
+        $("html , body").animate({
+            "scrollTop": 0
+        }, 1000)
+    });
+
+    var Name = document.getElementById("name");
+    var Family = document.getElementById("family");
+    var Email = document.getElementById("emails");
+    var TextA = document.getElementById("TextArea1");
+    var Btn = document.getElementById("submit");
+    $("#name").keyup(function (e) {
+        $("#error-name").fadeOut(300);
+        if ($(this).val() == "") {
+            $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+        }
+        else {
+            $("#imoji").html("<i class='fas fa-laugh fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+        }
+
+        if (e.keyCode == 13) {
+            Family.focus();
+        }
+    });
+
+    $("#family").keyup(function (e) {
+        $("#error-family").fadeOut(300);
+        if ($(this).val() == "") {
+            $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+        }
+        else {
+            $("#imoji").html("<i class='fas fa-grin-stars fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+        }
+
+        if (e.keyCode == 13) {
+            Email.focus();
+        }
+    });
+
+    $("#emails").keyup(function (e) {
+        $("#error-emails").fadeOut(300);
+        $("#error-lister").fadeOut(300);
+        if ($(this).val() == "") {
+            $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+        }
+        else {
+            $("#imoji").html("<i class='fas fa-dizzy fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+        }
+
+        if (e.keyCode == 13) {
+            TextA.focus();
+        }
+    });
+
+    $("#TextArea1").keyup(function (e) {
+        $("#error-TextArea1").fadeOut(300);
+        if ($(this).val() == "") {
+            $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+        }
+        else {
+            $("#imoji").html("<i class='fas fa-grin-stars fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+        }
+    });
+
+    $("#reset").click(function (e) {
+        $("#imoji").html("<i class='fas fa-smile fa-10x text-warning bg-dark' style='padding:3px;border-radius: 100% ;'></i>");
+        $(".all-btn").val("");
+    });
 });
