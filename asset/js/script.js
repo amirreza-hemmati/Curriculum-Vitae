@@ -168,24 +168,7 @@ $(document).ready(function () {
     /* scrll full top */
 
 
-    /* stick d-body-2 */
-    $(window).scroll(function () {
-        if ($(window).width() > 1005) {
-            if ($(this).scrollTop() > 720) {
-                $("#stick").css({
-                    "position": "fixed",
-                    "width": $("#d-body2").width() + '30px',
-                    "top": "47px"
-                });
-            }
-            else {
-                $("#stick").css({
-                    "position": "relative",
-                    "top": 0,
-                });
-            }
-        }
-    });
+
 
     $("#full-scroll-top").click(function (e) {
         $("html , body").animate({
