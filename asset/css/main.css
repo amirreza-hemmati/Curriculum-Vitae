@@ -471,17 +471,18 @@ body{
     z-index: 10;
 }
 
-#full-scroll-top {
-    transition: 0.3s;
-    display: none;
-    font-size: 40px;
-}
-
 .full-scroll {
     position: fixed;
     z-index: 3;
     top: 90%;
     left: 15px;
+}
+
+#full-scroll-top {
+    transition: 0.3s;
+    display: none;
+    font-size: 40px;
+	cursor: pointer;
 }
 
 #full-scroll-top:hover {
